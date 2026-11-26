@@ -1,75 +1,249 @@
 <!doctype html>
 <html lang="zh-HK">
 <head>
-<title>新加坡聖誕行程</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>新加坡聖誕玩咩好</title>
 <style>
-:root{--bg:#fbf7f2;--fg:#2b2622;--muted:#6f655c;--card:#ffffff;--line:#e6ddd2;--accent:#b3262e;--chip:#f3e7d9;--ok:#2f6b4f}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1a18;--fg:#f1e9e0;--muted:#b3a89c;--card:#292522;--line:#3b3531;--accent:#ee6a70;--chip:#3a322b;--ok:#7fcf9f;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#1d1a18;--fg:#f1e9e0;--muted:#b3a89c;--card:#292522;--line:#3b3531;--accent:#ee6a70;--chip:#3a322b;--ok:#7fcf9f;color-scheme:dark}
-body{background:var(--bg);color:var(--fg);font:17px/1.6 -apple-system,"PingFang HK","Noto Sans HK","Microsoft JhengHei",sans-serif;padding-block:20px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+:root{--bg:#fff8f1;--fg:#2b2220;--muted:#75665e;--card:#ffffff;--line:#efdfd0;--red:#c8202c;--green:#1f6b4a;--gold:#f4b73f;--chip:#fbe9d6;--warn:#9a5b00}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1716;--fg:#f4ebe3;--muted:#b9aca2;--card:#2a2321;--line:#43372f;--red:#ff7078;--green:#7fd1a4;--gold:#f4b73f;--chip:#3d3028;--warn:#f0b35a;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 -apple-system,"PingFang HK","Noto Sans HK","Microsoft JhengHei",sans-serif;padding-block:0 40px;padding-left:max(14px,env(safe-area-inset-left,0px));padding-right:max(14px,env(safe-area-inset-right,0px))}
 main{max-width:640px;margin:0 auto}
-h1{font-size:1.7rem;margin:0 0 4px;text-wrap:balance}
-h2{font-size:1.2rem;margin:28px 0 10px;color:var(--accent)}
-.sub{color:var(--muted);margin:0 0 16px}
-.fixed{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-.fixed p{margin:4px 0}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;margin:0 0 12px}
-.card h3{margin:0 0 4px;font-size:1.08rem}
-.code{display:inline-block;background:var(--accent);color:#fff;font-weight:700;border-radius:6px;padding:0 8px;margin-right:6px}
+.hero{background:linear-gradient(135deg,#b3202b,#e0453a 60%,#f4b73f);color:#fff;border-radius:0 0 22px 22px;margin:0 -14px 18px;padding:26px 20px 22px}
+.hero h1{margin:0 0 6px;font-size:1.9rem;line-height:1.25;text-wrap:balance}
+.hero p{margin:4px 0;opacity:.95}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px}
+nav a{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;text-decoration:none;color:var(--fg);font-weight:600}
+h2{font-size:1.35rem;margin:34px 0 4px;scroll-margin-top:12px}
+h2 .big{color:var(--red)}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin:0 0 16px}
+.card .body{padding:14px 16px 16px}
+.card h3{margin:0 0 6px;font-size:1.15rem;line-height:1.35}
+.code{display:inline-block;background:var(--red);color:#fff;font-weight:800;border-radius:8px;padding:0 9px;margin-right:8px;font-size:1rem}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
-.chip{background:var(--chip);border-radius:999px;padding:1px 10px;font-size:.85rem}
-.card p{margin:4px 0}
-a{color:var(--accent)}
-.todo{color:var(--muted);font-size:.9rem}
-.ask{background:var(--chip);border-radius:10px;padding:12px 14px;margin-top:24px}
+.chip{background:var(--chip);border-radius:999px;padding:1px 11px;font-size:.88rem}
+.chip.free{background:#dff3e7;color:#14573a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .chip.free{background:#1f3a2c;color:#9be0bb}}
+.card p{margin:6px 0}
+.price{font-weight:700}
+.todo{color:var(--warn);font-size:.92rem}
+.src{font-size:.88rem;color:var(--muted)}
+.poster{display:block;width:100%;height:auto;background:#eee}
+.credit{font-size:.78rem;color:var(--muted);padding:4px 16px 0}
+a{color:var(--red)}
+.fixed,.tips,.ask{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.fixed p,.tips p,.ask p{margin:6px 0}
+.ask{background:var(--chip);border:0}
+.ask li{margin:6px 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.scroll{overflow-x:auto}
+footer{margin-top:30px;color:var(--muted);font-size:.85rem}
 </style>
 </head>
 <body>
 <main>
-<h1>新加坡聖誕行程（測試版）</h1>
-<p class="sub">大家一齊揀，喺 WhatsApp 回覆代號（例如「揀 A1」）</p>
+<header class="hero">
+<h1>🎄 新加坡聖誕<br>玩咩好？</h1>
+<p>12月尾一齊去新加坡，下面係我哋搵到嘅景點同活動。</p>
+<p>邊個想去就喺 WhatsApp 回覆代號，例如「想去 A2、B1」。冇固定邊日去邊度，大家揀完先排。</p>
+</header>
 
-<h2>已經定咗</h2>
-<div class="fixed">
-<p>🏨 酒店喺港灣一帶，近 Sentosa</p>
-<p>🛬 24日：家姐一家先到，M 同 S 夜晚到</p>
-<p>🛫 29日：家姐一家 13:10 飛返香港，M 同 S 搭巴士去馬來西亞</p>
-</div>
+<nav>
+<a href="#a">A 聖誕限定</a>
+<a href="#b">B 樂園</a>
+<a href="#c">C 動物</a>
+<a href="#d">D 打卡位</a>
+<a href="#e">E 輕鬆</a>
+<a href="#tips">實用貼士</a>
+</nav>
 
-<h2>A. 聖誕燈飾同市集</h2>
+<h2 id="a"><span class="big">A</span> 聖誕限定（只喺聖誕期間先有）</h2>
+<p class="lead">全部到2027年1月3日。晚上嘅燈同市集最靚，不過細路夜晚要留意體力。</p>
 
 <div class="card">
+<img class="poster" loading="lazy" src="img/orchard.jpg" alt="烏節路聖誕燈飾海報">
+<div class="credit">圖：小紅書 @小熊布丁</div>
+<div class="body">
 <h3><span class="code">A1</span>烏節路聖誕燈飾</h3>
-<div class="chips"><span class="chip">免費行街</span><span class="chip">阿媽、細路都啱</span><span class="chip">約2小時</span></div>
-<p>由 2026年11月17日開到2027年1月3日。傍晚6:30後燈最靚。義安城有聖誕市集同細路遊戲攤位，晚上8點、9點有落雪。</p>
-<p class="todo">交通：由酒店搭 MRT 約25至30分鐘（待確認）</p>
-<p><a href="https://www.littlebigreddot.com/orchard-road-christmas-light-up-2026/">資料連結（英文）</a></p>
+<div class="chips"><span class="chip free">免費行街</span><span class="chip">阿媽、細路都啱</span><span class="chip">約2小時</span></div>
+<p>由2026年11月17日開到2027年1月3日。傍晚6:30之後燈最靚。義安城同 Shaw House 設有聖誕市集，有細路遊戲攤位，義安城晚上8點、9點有落雪。</p>
+<p class="todo">市集入場同遊戲要另外俾錢。市集時間可能會變，出發前睇官網。</p>
+<p class="src"><a href="https://christmas.orchardroad.org">官方網站（英文）</a> · <a href="https://www.littlebigreddot.com/orchard-road-christmas-light-up-2026/">詳細介紹（英文）</a></p>
+</div>
 </div>
 
 <div class="card">
-<h3><span class="code">A2</span>濱海灣花園：聖誕奇境＋花穹火車展</h3>
-<div class="chips"><span class="chip">要買票</span><span class="chip">細路最愛</span><span class="chip">火車展約1小時</span></div>
-<p>聖誕奇境：11月27日至1月3日，晚上6:30至11:00。花穹聖誕火車展：11月20日至1月3日，早上9:00至晚上9:00。星期六日同聖誕節前後好多人，要預早買票。</p>
-<p class="todo">外國遊客票價：待確認（官網只列出居民價）</p>
-<p><a href="https://www.gardensbythebay.com.sg/en/things-to-do/calendar-of-events/gardens-by-the-bay-christmas-train-show-2026.html">官方網頁（英文）</a></p>
+<img class="poster" loading="lazy" src="img/wonderland.jpg" alt="濱海灣花園聖誕嘉年華海報">
+<div class="credit">圖：小紅書 @小熊布丁</div>
+<div class="body">
+<h3><span class="code">A2</span>濱海灣花園：聖誕奇境 Christmas Wonderland</h3>
+<div class="chips"><span class="chip">要買票</span><span class="chip">細路最愛</span><span class="chip">夜晚6:30至11:00</span></div>
+<p>11月27日至1月3日。有20米高聖誕樹屋、Santa Mission Control 同市集。</p>
+<p class="price">入場約 S$9 至 S$16（約HK$55至95），小童 S$7（約HK$40）。</p>
+<p class="todo">價錢來自第三方網站，按日子同提早購票而異，「待確認」。假日同聖誕前後人多，建議預早上網買票。</p>
+<p class="src"><a href="https://www.christmaswonderland.sg/">購票網站（英文）</a> · <a href="https://www.bykido.com/blogs/events-and-activities/christmas-wonderland-2026-singapore-biggest-yuletide-fair">價錢參考（英文）</a></p>
 </div>
-
-<h2>D. 阿媽想影相打卡位</h2>
+</div>
 
 <div class="card">
-<h3><span class="code">D1</span>魚尾獅公園</h3>
-<div class="chips"><span class="chip">免費</span><span class="chip">約30至45分鐘</span></div>
-<p>新加坡標誌，同魚尾獅影相，背後係金沙酒店。</p>
-<p class="todo">由酒店前往時間：待確認</p>
+<img class="poster" loading="lazy" src="img/flowerdome.jpg" alt="花穹聖誕火車展海報">
+<div class="credit">圖：小紅書 @小熊布丁</div>
+<div class="body">
+<h3><span class="code">A3</span>花穹聖誕火車展 Flower Dome</h3>
+<div class="chips"><span class="chip">室內有冷氣</span><span class="chip">細路啱</span><span class="chip">約1小時</span></div>
+<p>11月20日至1月3日，每日早上9:00至晚上9:00。微縮火車穿梭喺迷你景觀之間。要買 Flower Dome 門票。</p>
+<p class="todo">遊客票價：待確認（官網只列出居民價）。</p>
+<p class="src"><a href="https://www.gardensbythebay.com.sg/en/things-to-do/calendar-of-events/gardens-by-the-bay-christmas-train-show-2026.html">官方網頁（英文）</a></p>
+</div>
 </div>
 
+<div class="card">
+<img class="poster" loading="lazy" src="img/jewel.jpg" alt="星耀樟宜聖誕海報">
+<div class="credit">圖：小紅書 @小熊布丁</div>
+<div class="body">
+<h3><span class="code">A4</span>星耀樟宜 Jewel：聖誕樹 ＋ 落雪 ＋ 雨漩渦</h3>
+<div class="chips"><span class="chip">聖誕樹免費</span><span class="chip">阿媽影相位</span><span class="chip">近機場</span></div>
+<p>11月13日至1月3日。16米高聖誕樹免費睇，晚上有「落雪」表演（約8:05pm，週末加場）。樹上面 Canopy Park 入場 S$8（約HK$48）。</p>
+<p class="todo">位置喺樟宜機場，由酒店去要搭較長時間（待確認）。最啱喺起飛或抵達嗰日順路去，唔使特登。Pokémon 活動十二月仲有冇：待確認。</p>
+<p class="src"><a href="https://littlebigreddot.com/travel-christmas-at-jewel-changi-2026-uniqlo-tree-snow/">詳細介紹（英文）</a></p>
+</div>
+</div>
+
+<div class="card">
+<img class="poster" loading="lazy" src="img/markets.jpg" alt="新加坡聖誕市集海報">
+<div class="credit">圖：小紅書 @小熊布丁</div>
+<div class="body">
+<h3><span class="code">A5</span>聖淘沙名勝世界聖誕裝飾 ＋ 市集</h3>
+<div class="chips"><span class="chip free">裝飾免費</span><span class="chip">近酒店</span></div>
+<p>11月27日至1月3日。8米聖誕樹同裝飾喺 WEAVE 公共地方，唔使買樂園門票都可以睇。Oceanarium 十二月有水底聖誕表演（每日約3:30pm）。</p>
+<p class="src"><a href="https://littlebigreddot.com/rws-season-of-joy-2026-christmas-sentosa/">詳細介紹（英文）</a></p>
+</div>
+</div>
+
+<h2 id="b"><span class="big">B</span> 樂園同水族館</h2>
+<p class="lead">呢類要成日時間。細路5歲同10歲，要睇身高限制，所以先問家姐想唔想去。</p>
+
+<div class="card"><div class="body">
+<h3><span class="code">B1</span>環球影城 Universal Studios Singapore</h3>
+<div class="chips"><span class="chip">玩成日</span><span class="chip">10歲啱</span><span class="chip">5歲有部分設施有身高限制</span></div>
+<p class="price">一日票：平日 大人 S$83（約HK$500）、小童 S$62（約HK$370）。假日大人 S$86、小童 S$64。</p>
+<p>聖誕期間有糖果主題聖誕樹同 Jingle Jam 表演，12月22至25日晚有煙花（來自第三方報道）。</p>
+<p>身高參考：Transformers、小小兵約 102cm 以上，Revenge of the Mummy 122cm，Battlestar Galactica 125cm。</p>
+<p class="todo">價錢同時間來自第三方網站（2026年6月更新），「待確認」。快速通行證好貴（約 S$291 一位起）。</p>
+<p class="src"><a href="https://rwsentosa.com/en/promotions/attractions/universal-studios-singapore-a-universal-christmas">官方網站（英文）</a></p>
+</div></div>
+
+<div class="card"><div class="body">
+<h3><span class="code">B2</span>新加坡海洋館 Oceanarium</h3>
+<div class="chips"><span class="chip">室內有冷氣</span><span class="chip">5歲同10歲都啱</span><span class="chip">約3至4小時</span></div>
+<p class="price">大人由 S$55（約HK$330）起，小童（4至12歲）由 S$43（約HK$260）起。</p>
+<p>聖誕期間有水底聖誕表演、聖誕老人潛水餵魚。12月5、15、16日全日休館（官網通告）。</p>
+<p class="src"><a href="https://www.rwsentosa.com/id-id/play/singapore-oceanarium">官方網站（英文）</a></p>
+</div></div>
+
+<div class="card"><div class="body">
+<h3><span class="code">B3</span>新加坡纜車 Cable Car</h3>
+<div class="chips"><span class="chip">景色</span><span class="chip">阿媽可以坐低歎景</span></div>
+<p class="price">Sky Pass：大人 S$35（約HK$210），小童 S$25（約HK$150）。</p>
+<p class="todo">價錢同營業時間來自第三方網站，「待確認」。</p>
+<p class="src"><a href="https://www.mountfaberleisure.com/attraction/singapore-cable-car/">官方網站（英文）</a></p>
+</div></div>
+
+<h2 id="c"><span class="big">C</span> 動物</h2>
+<p class="lead">萬態野生動物保育園 Mandai 一帶有幾個，可以揀一至兩個。價錢係遊客價（成人 / 小童），官網「regular days」。</p>
+
+<div class="card"><div class="scroll">
+<table>
+<tr><th>代號</th><th>地方</th><th>大人</th><th>小童</th></tr>
+<tr><td><span class="code">C1</span></td><td>新加坡動物園（日間，8:30至18:00）</td><td>S$49</td><td>S$34</td></tr>
+<tr><td><span class="code">C2</span></td><td>河川生態園 River Wonders（9:00至18:00）</td><td>S$45</td><td>S$33</td></tr>
+<tr><td><span class="code">C3</span></td><td>夜間動物園 Night Safari（18:00至午夜，要揀時段）</td><td>S$58</td><td>S$41</td></tr>
+<tr><td><span class="code">C4</span></td><td>飛禽公園 Bird Paradise</td><td>S$49</td><td>S$34</td></tr>
+</table>
+</div>
+<div class="body">
+<p>組合票：2個景點一日通行證，大人 S$98 / 小童 S$70。6個景點一日通行證，大人 S$128 / 小童 S$100。（小童指3至12歲）</p>
+<p class="todo">夜間動物園晚上先開，5歲細路可能太夜。想睇動物，日間動物園或河川生態園較易。小童價年齡範圍以官網為準。</p>
+<p class="src"><a href="https://www.mandai.com/en/tickets-and-passes.html">官方購票（英文）</a> · <a href="https://www.mandai.com/en/night-safari.html">夜間動物園（英文）</a></p>
+</div></div>
+
+<h2 id="d"><span class="big">D</span> 阿媽想影相打卡位</h2>
+<p class="lead">全部都係新加坡標誌性地方，影張相就得，唔使入場。</p>
+
+<div class="card"><div class="body">
+<h3><span class="code">D1</span>魚尾獅公園 Merlion Park</h3>
+<div class="chips"><span class="chip free">免費</span><span class="chip">約30至45分鐘</span></div>
+<p>最經典嘅相。背後係金沙酒店，傍晚或夜晚影更靚。可以同 D2 一齊去。</p>
+</div></div>
+
+<div class="card"><div class="body">
+<h3><span class="code">D2</span>濱海灣金沙酒店 ＋ 濱海灣花園外圍</h3>
+<div class="chips"><span class="chip free">外圍免費</span><span class="chip">夜景</span></div>
+<p>沿海濱行，可以影到金沙酒店、藝術科學館同蓮花。同 A2 同一區，可以放喺同一晚。</p>
+<p class="todo">觀景台（Skypark）要買票，價錢待確認。</p>
+</div></div>
+
+<div class="card"><div class="body">
+<h3><span class="code">D3</span>牛車水 Chinatown</h3>
+<div class="chips"><span class="chip free">免費行街</span><span class="chip">買手信</span><span class="chip">食嘢</span></div>
+<p>傳統店舖、寺廟同小販中心，買手信好方便。聖誕期間通常有燈飾，詳情待確認。</p>
+</div></div>
+
+<div class="card"><div class="body">
+<h3><span class="code">D4</span>克拉碼頭 Clarke Quay ／ 駁船碼頭</h3>
+<div class="chips"><span class="chip free">免費</span><span class="chip">夜景</span></div>
+<p>河邊彩色建築同餐廳，夜晚好有氣氛。可以食飯順便行。</p>
+</div></div>
+
+<div class="card"><div class="body">
+<h3><span class="code">D5</span>哈芝巷 ／ 甘榜格南（蘇丹回教堂一帶）</h3>
+<div class="chips"><span class="chip free">免費</span><span class="chip">壁畫</span></div>
+<p>色彩繽紛嘅壁畫同小店，好多人影相。</p>
+</div></div>
+
+<div class="card"><div class="body">
+<h3><span class="code">D6</span>星耀樟宜雨漩渦</h3>
+<div class="chips"><span class="chip">室內瀑布</span></div>
+<p>40米高室內瀑布，晚上有燈光。同 A4 一齊去。</p>
+</div></div>
+
+<h2 id="e"><span class="big">E</span> 輕鬆選擇（唔想趕時間 ／ 落雨）</h2>
+<div class="card"><div class="body">
+<p><span class="code">E1</span>酒店泳池慢慢歎，細路玩水。</p>
+<p><span class="code">E2</span>VivoCity 商場食飯、行街、細路玩樂區（近酒店）。</p>
+<p><span class="code">E3</span>聖淘沙海灘行下，睇聖誕裝飾（A5）。</p>
+<p><span class="code">E4</span>小販中心食本地小食，例如 Maxwell、Lau Pa Sat、Amoy Street。</p>
+<p class="todo">開放時間同交通時間：待確認。</p>
+</div></div>
+
+<h2 id="tips">實用貼士</h2>
+<div class="tips">
+<p>🚇 <b>搭 MRT 同巴士</b>：用有感應功能嘅 Visa 或 Mastercard 直接拍卡就得。短時間玩唔使買卡。想用通行證：Singapore Tourist Pass 一日 S$17，兩日 S$24，三日 S$29。<br><a href="https://simplygo.com.sg/travel-cards/">官方資料（英文）</a></p>
+<p>🚕 <b>人多或者有細路</b>：叫車（Grab）或者的士較方便。</p>
+<p>☔ <b>十二月係雨季</b>：帶遮同薄外套。室內選擇：A3、B2、E2。</p>
+<p>🌙 <b>細路夜晚</b>：5歲細路建議每日只做一件主要嘢，晚上唔好太夜。</p>
+<p>🎟️ <b>要預早買票</b>：A2、B1、C3 同聖誕期間人多，建議行前上網買。</p>
+<p>💱 <b>價錢</b>：S$1 約 HK$6。</p>
+</div>
+
+<h2>請大家回覆</h2>
 <div class="ask">
-<strong>家姐請回覆：</strong>
-<p>1. 細路想去環球影城定動物園？</p>
-<p>2. 阿媽邊啲打卡位一定要去？</p>
+<ol>
+<li>細路想玩邊類：樂園（B）、動物（C）、聖誕燈飾（A）？</li>
+<li>阿媽邊啲打卡位一定要去（D）？</li>
+<li>有冇邊個唔想去或者太攰嘅？</li>
+<li>夜晚去唔去睇燈？去嘅話幾點返酒店？</li>
+</ol>
+<p>回覆代號就得，例如：「想去 A1、A2、B2、D1、D3」。</p>
 </div>
+
+<footer>
+<p>資料整理自官方網站同第三方網頁，價錢同時間可能更改，出發前請再確認。標「待確認」嘅項目未核實。海報圖來自小紅書 @小熊布丁，只作家人參考。</p>
+</footer>
 </main>
 </body>
 </html>
