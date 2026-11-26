@@ -59,7 +59,7 @@ footer{margin-top:30px;color:var(--muted);font-size:.85rem}
 body{padding-bottom:86px}
 #msg{font-size:.9rem;color:var(--muted);text-align:center;margin:8px 0}
 
-.gal{display:flex;gap:8px;margin:10px 0 2px;overflow-x:auto;padding-bottom:4px}
+.gal{display:flex;gap:8px;margin:0;overflow-x:auto;padding-bottom:4px}
 .gal button{flex:0 0 auto;border:0;padding:0;background:none;border-radius:10px;overflow:hidden;cursor:pointer}
 .gal img{display:block;width:104px;height:78px;object-fit:cover;border-radius:10px}
 #lb{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.97);display:none;flex-direction:column;align-items:center;justify-content:center;padding:max(12px,env(safe-area-inset-top,0px)) 12px max(12px,env(safe-area-inset-bottom,0px))}
@@ -210,16 +210,39 @@ body{padding-bottom:86px}
 <h2 id="c"><span class="big">C</span> 動物</h2>
 <p class="lead">萬態野生動物保育園 Mandai 一帶有幾個，可以揀一至兩個。價錢係遊客價（成人 / 小童），官網「regular days」。</p>
 
-<div class="card"><img class="photo" loading="lazy" src="img/zoo.jpg" alt="新加坡動物園白老虎"><div class="scroll">
-<table>
-<tr><th>代號</th><th>地方</th><th>大人</th><th>小童</th></tr>
-<tr><td><span class="code">C1</span></td><td>新加坡動物園（日間，8:30至18:00） <a href="https://www.google.com/maps/search/?api=1&amp;query=Singapore%20Zoo" target="_blank" rel="noopener noreferrer">📍</a></td><td>S$49</td><td>S$34</td></tr>
-<tr><td><span class="code">C2</span></td><td>河川生態園 River Wonders（9:00至18:00） <a href="https://www.google.com/maps/search/?api=1&amp;query=River%20Wonders%20Singapore" target="_blank" rel="noopener noreferrer">📍</a></td><td>S$45</td><td>S$33</td></tr>
-<tr><td><span class="code">C3</span></td><td>夜間動物園 Night Safari（18:00至午夜，要揀時段）🎟️ <a href="https://www.google.com/maps/search/?api=1&amp;query=Night%20Safari%20Singapore" target="_blank" rel="noopener noreferrer">📍</a></td><td>S$58</td><td>S$41</td></tr>
-<tr><td><span class="code">C4</span></td><td>飛禽公園 Bird Paradise <a href="https://www.google.com/maps/search/?api=1&amp;query=Bird%20Paradise%20Singapore" target="_blank" rel="noopener noreferrer">📍</a></td><td>S$49</td><td>S$34</td></tr>
-</table>
-</div>
-<div class="body">
+<div class="card"><div class="body">
+<h3><span class="code">C1</span>新加坡動物園 Singapore Zoo</h3>
+<div class="chips"><span class="chip">日間 8:30至18:00（最後入場17:00）</span></div>
+<p class="price">遊客價：大人 S$49，小童 S$34</p>
+<p class="src"><a href="https://www.google.com/maps/search/?api=1&amp;query=Singapore%20Zoo" target="_blank" rel="noopener noreferrer">📍 Google 地圖</a></p>
+<p class="src"><a href="https://www.mandai.com/en/singapore-zoo.html" target="_blank" rel="noopener noreferrer">官方網頁（英文）</a></p>
+</div></div>
+
+<div class="card"><div class="body">
+<h3><span class="code">C2</span>河川生態園 River Wonders</h3>
+<div class="chips"><span class="chip">日間 9:00至18:00（最後入場17:00）</span></div>
+<p class="price">遊客價：大人 S$45，小童 S$33</p>
+<p class="src"><a href="https://www.google.com/maps/search/?api=1&amp;query=River%20Wonders%20Singapore" target="_blank" rel="noopener noreferrer">📍 Google 地圖</a></p>
+<p class="src"><a href="https://www.mandai.com/en/river-wonders.html" target="_blank" rel="noopener noreferrer">官方網頁（英文）</a></p>
+</div></div>
+
+<div class="card"><div class="body">
+<h3><span class="code">C3</span>夜間動物園 Night Safari</h3>
+<div class="chips"><span class="chip book">🎟️ 要預早訂</span><span class="chip">晚上 18:00至午夜（最後入場23:15），要揀時段</span></div>
+<p class="price">遊客價：大人 S$58，小童 S$41</p>
+<p class="src"><a href="https://www.google.com/maps/search/?api=1&amp;query=Night%20Safari%20Singapore" target="_blank" rel="noopener noreferrer">📍 Google 地圖</a></p>
+<p class="src"><a href="https://www.mandai.com/en/night-safari.html" target="_blank" rel="noopener noreferrer">官方網頁（英文）</a></p>
+</div></div>
+
+<div class="card"><div class="body">
+<h3><span class="code">C4</span>飛禽公園 Bird Paradise</h3>
+<div class="chips"><span class="chip">營業時間：待確認</span></div>
+<p class="price">遊客價：大人 S$49，小童 S$34</p>
+<p class="src"><a href="https://www.google.com/maps/search/?api=1&amp;query=Bird%20Paradise%20Singapore" target="_blank" rel="noopener noreferrer">📍 Google 地圖</a></p>
+<p class="src"><a href="https://www.mandai.com/en/bird-paradise.html" target="_blank" rel="noopener noreferrer">官方網頁（英文）</a></p>
+</div></div>
+
+<div class="card"><div class="body">
 <p>組合票：2個景點一日通行證，大人 S$98 / 小童 S$70。6個景點一日通行證，大人 S$128 / 小童 S$100。（小童指3至12歲）</p>
 <p class="todo">夜間動物園晚上先開，5歲細路可能太夜。想睇動物，日間動物園或河川生態園較易。小童價年齡範圍以官網為準。</p>
 <p class="src"><a href="https://www.mandai.com/en/tickets-and-passes.html" target="_blank" rel="noopener noreferrer">官方購票（英文）</a> · <a href="https://www.mandai.com/en/night-safari.html" target="_blank" rel="noopener noreferrer">夜間動物園（英文）</a></p>
@@ -273,10 +296,29 @@ body{padding-bottom:86px}
 
 <h2 id="e"><span class="big">E</span> 輕鬆選擇（唔想趕時間 ／ 落雨）</h2>
 <div class="card"><div class="body">
-<p><span class="code">E1</span>酒店泳池慢慢歎，細路玩水。</p>
-<p><span class="code">E2</span>VivoCity 商場食飯、行街、細路玩樂區（近酒店）。 <a href="https://www.google.com/maps/search/?api=1&amp;query=VivoCity%20Singapore" target="_blank" rel="noopener noreferrer">📍地圖</a></p>
-<p><span class="code">E3</span>聖淘沙海灘行下，睇聖誕裝飾（A5）。 <a href="https://www.google.com/maps/search/?api=1&amp;query=Siloso%20Beach%20Sentosa" target="_blank" rel="noopener noreferrer">📍地圖</a></p>
-<p><span class="code">E4</span>小販中心食本地小食，例如 Maxwell、Lau Pa Sat、Amoy Street。 <a href="https://www.google.com/maps/search/?api=1&amp;query=Maxwell%20Food%20Centre%20Singapore" target="_blank" rel="noopener noreferrer">📍地圖</a></p>
+<h3><span class="code">E1</span>酒店泳池</h3>
+<p>慢慢歎，細路玩水。泳池喺天台，開放時間以酒店為準。</p>
+</div></div>
+
+<div class="card"><div class="body">
+<h3><span class="code">E2</span>VivoCity 商場</h3>
+<div class="chips"><span class="chip">室內有冷氣</span><span class="chip">近酒店</span></div>
+<p>食飯、行街、細路玩樂區。落雨或者太熱都啱。</p>
+<p class="src"><a href="https://www.google.com/maps/search/?api=1&amp;query=VivoCity%20Singapore" target="_blank" rel="noopener noreferrer">📍 Google 地圖</a></p>
+</div></div>
+
+<div class="card"><div class="body">
+<h3><span class="code">E3</span>聖淘沙海灘</h3>
+<div class="chips"><span class="chip free">免費</span><span class="chip">游水／行沙灘</span></div>
+<p>海灘行下，順便睇聖誕裝飾（A5）。</p>
+<p class="src"><a href="https://www.google.com/maps/search/?api=1&amp;query=Siloso%20Beach%20Sentosa" target="_blank" rel="noopener noreferrer">📍 Google 地圖</a></p>
+</div></div>
+
+<div class="card"><div class="body">
+<h3><span class="code">E4</span>小販中心食本地小食</h3>
+<div class="chips"><span class="chip">平</span><span class="chip">細路都食得</span></div>
+<p>例如 Maxwell、Lau Pa Sat、Amoy Street。</p>
+<p class="src"><a href="https://www.google.com/maps/search/?api=1&amp;query=Maxwell%20Food%20Centre%20Singapore" target="_blank" rel="noopener noreferrer">📍 Google 地圖</a></p>
 <p class="todo">開放時間同交通時間：待確認。</p>
 </div></div>
 
@@ -335,21 +377,29 @@ lb.addEventListener('click',function(e){if(e.target===lb)close();});
 document.getElementById('lbp').onclick=function(){idx=(idx+cur.length-1)%cur.length;show();};
 document.getElementById('lbn').onclick=function(){idx=(idx+1)%cur.length;show();};
 document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+var official={A:1,B:1,C:1};
 Object.keys(G).forEach(function(code){
  var tag=[].slice.call(document.querySelectorAll('.card .code')).filter(function(c){return c.textContent.trim()===code;})[0];
  if(!tag)return;
- var host=null;
- if(code[0]==='C'){host=document.getElementById('c-gal-'+code);}
+ var card=tag.closest('.card');
  var list=G[code].map(function(g){return {code:code,n:g.n,c:g.c,u:g.u};});
- var row=document.createElement('div');row.className='gal';
- list.forEach(function(it,i){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','睇大圖');
-  var im=document.createElement('img');im.loading='lazy';im.src='img/g/'+code+'-'+it.n+'-t.jpg';im.alt='';b.appendChild(im);
-  b.onclick=function(){open(list,i);};row.appendChild(b);});
- if(host){host.appendChild(row);return;}
- var card=tag.closest('.card');var body=card.querySelector('.body');
- if(code[0]==='C'){var lab=document.createElement('div');lab.style.cssText='font-weight:700;margin:10px 0 2px';lab.textContent=code+' '+tag.closest('tr').cells[1].textContent.replace(/（.*$/,'').replace('🎟️','').replace('📍','').trim();row.insertBefore(lab,row.firstChild);row.style.flexWrap='wrap';}
- var src=body.querySelector('p.src');
- if(src)body.insertBefore(row,src);else body.appendChild(row);
+ var hero=card.querySelector(':scope > img');
+ var useFirst=!!official[code[0]]||!hero;
+ var main=hero,start=0;
+ if(useFirst){
+  if(hero)hero.remove();
+  var cr=card.querySelector(':scope > .credit');if(cr)cr.remove();
+  main=document.createElement('img');main.className='photo';main.alt='';main.src='img/g/'+code+'-1.jpg';
+  main.addEventListener('click',function(){open(list,0);});main.style.cursor='zoom-in';
+  card.insertBefore(main,card.firstChild);start=1;
+ }
+ if(list.length>start){
+  var row=document.createElement('div');row.className='gal';row.style.padding='8px 12px 0';
+  list.forEach(function(it,i){if(i<start)return;var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','睇大圖');
+   var im=document.createElement('img');im.loading='lazy';im.src='img/g/'+code+'-'+it.n+'-t.jpg';im.alt='';b.appendChild(im);
+   b.onclick=function(){open(list,i);};row.appendChild(b);});
+  main.insertAdjacentElement('afterend',row);
+ }
 });
 })();
 </script>
