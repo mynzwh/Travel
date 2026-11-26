@@ -45,6 +45,19 @@ table{border-collapse:collapse;width:100%;font-size:.95rem}
 th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 .scroll{overflow-x:auto}
 footer{margin-top:30px;color:var(--muted);font-size:.85rem}
+
+.pick{display:inline-flex;align-items:center;gap:6px;margin:0 8px 0 0;vertical-align:middle;cursor:pointer}
+.pick input{width:26px;height:26px;accent-color:var(--red);margin:0}
+.who{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 16px;margin:0 0 6px}
+.who label{display:inline-flex;align-items:center;gap:6px;margin-right:18px;font-weight:700;font-size:1.05rem}
+.who input{width:22px;height:22px;accent-color:var(--red)}
+#bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--card);border-top:1px solid var(--line);padding:10px max(14px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(14px,env(safe-area-inset-left,0px));display:flex;gap:10px;align-items:center;justify-content:center}
+#bar .cnt{font-weight:700}
+#bar button{border:0;border-radius:999px;padding:10px 18px;font:inherit;font-weight:700;background:var(--green);color:#fff}
+#bar button.clear{background:var(--chip);color:var(--fg)}
+#bar button:disabled{opacity:.45}
+body{padding-bottom:86px}
+#msg{font-size:.9rem;color:var(--muted);text-align:center;margin:8px 0}
 </style>
 </head>
 <body>
@@ -54,6 +67,13 @@ footer{margin-top:30px;color:var(--muted);font-size:.85rem}
 <p>12月尾一齊去新加坡，下面係我哋搵到嘅景點同活動。</p>
 <p>邊個想去就喺 WhatsApp 回覆代號，例如「想去 A2、B1」。冇固定邊日去邊度，大家揀完先排。</p>
 </header>
+
+<div class="who" id="who"><b>你係邊位？</b><br>
+<label><input type="radio" name="who" value="家姐" id="w1">家姐</label>
+<label><input type="radio" name="who" value="阿媽" id="w2">阿媽</label>
+<label><input type="radio" name="who" value="其他" id="w3">其他</label>
+</div>
+<p class="lead" style="margin-top:6px">先揀你係邊位，然後喺每個想去嘅項目剔一剔。剔完撳下面「傳去 WhatsApp」。</p>
 
 <nav>
 <a href="#a">A 聖誕限定</a>
@@ -271,5 +291,48 @@ footer{margin-top:30px;color:var(--muted);font-size:.85rem}
 <details><summary>相片來源（Wikimedia Commons）</summary><ul style="font-size:.8rem"><li>mbs：<a href="https://commons.wikimedia.org/wiki/File:Marina_Bay_Sands_(230913).jpg">Marina Bay Sands (230913).jpg</a>（Moheen Reeyad，CC BY-SA 4.0）</li><li>clarke：<a href="https://commons.wikimedia.org/wiki/File:Clarke_Quay_at_night,_Singapore,_20240205_1946_6058.jpg">Clarke Quay at night, Singapore, 20240205 1946 6058.jpg</a>（Jakub Hałun，CC BY 4.0）</li><li>uss：<a href="https://commons.wikimedia.org/wiki/File:Universal_Studios_Singapore_globe_(125026).jpg">Universal Studios Singapore globe (125026).jpg</a>（Moheen Reeyad，CC BY-SA 4.0）</li><li>zoo：<a href="https://commons.wikimedia.org/wiki/File:White_tiger_at_Singapore_Zoo,_20240206_0831_6134.jpg">White tiger at Singapore Zoo, 20240206 0831 6134.jpg</a>（Jakub Hałun，CC BY 4.0）</li><li>cablecar：<a href="https://commons.wikimedia.org/wiki/File:Singapore-Sentosa_Cable_Car_in_2023_01.jpg">Singapore-Sentosa Cable Car in 2023 01.jpg</a>（Renek78，CC0）</li><li>luge：<a href="https://commons.wikimedia.org/wiki/File:Sentosa_Luge,_Sentosa,_Aug_06.JPG">Sentosa Luge, Sentosa, Aug 06.JPG</a>（User:Sengkang，Copyrighted free use）</li><li>merlion：<a href="https://commons.wikimedia.org/wiki/File:Merli%C3%B3n,_Marina_Bay,_Singapur,_2023-08-18,_DD_45-47_HDR.jpg">Merlión, Marina Bay, Singapur, 2023-08-18, DD 45-47 HDR.jpg</a>（Diego Delso，CC BY-SA 4.0）</li><li>haji：<a href="https://commons.wikimedia.org/wiki/File:Haji_Lane_Walk.jpg">Haji Lane Walk.jpg</a>（Albert Lin，CC BY-SA 4.0）</li><li>chinatown：<a href="https://commons.wikimedia.org/wiki/File:Singapore_(SG),_China_Town,_Pagoda_Street_--_2019_--_4504.jpg">Singapore (SG), China Town, Pagoda Street -- 2019 -- 4504.jpg</a>（Dietmar Rabich，CC BY-SA 4.0）</li><li>jewel2：<a href="https://commons.wikimedia.org/wiki/File:Rain_Vortex_Jewel_Changi_Airport.jpg">Rain Vortex Jewel Changi Airport.jpg</a>（kallerna，CC BY-SA 4.0）</li><li>gbtb：<a href="https://commons.wikimedia.org/wiki/File:Singapore_(SG),_Gardens_By_The_Bay_--_2019_--_4468.jpg">Singapore (SG), Gardens By The Bay -- 2019 -- 4468.jpg</a>（Dietmar Rabich，CC BY-SA 4.0）</li><li>orchard2：<a href="https://commons.wikimedia.org/wiki/File:Christmas_Decorations_in_Orchard_Road,_Singapore_20241109.jpg">Christmas Decorations in Orchard Road, Singapore 20241109.jpg</a>（Earthkingfather，CC BY-SA 4.0）</li><li>flowerdome2：<a href="https://commons.wikimedia.org/wiki/File:Flower_Dome_(II).jpg">Flower Dome (II).jpg</a>（This Photo was taken by Supanu，CC BY 4.0）</li></ul></details>
 </footer>
 </main>
+<div id="bar"><span class="cnt" id="cnt">已揀 0 個</span><button id="send" disabled>傳去 WhatsApp</button><button class="clear" id="clear">清除</button></div>
+<script>
+(function(){
+var K='sgpicks';var picks={};var who='';
+try{var o=JSON.parse(localStorage.getItem(K)||'{}');picks=o.p||{};who=o.w||'';}catch(e){}
+function save(){try{localStorage.setItem(K,JSON.stringify({p:picks,w:who}));}catch(e){}}
+var items={};
+document.querySelectorAll('.card .code').forEach(function(c){
+ var code=c.textContent.trim();
+ if(!/^[A-E]\d$/.test(code))return;
+ var h=c.closest('h3');var title='';
+ if(h){title=h.textContent.replace(code,'').trim();}
+ else{var td=c.closest('tr');if(td){title=td.cells[1].textContent.replace(/（.*$/,'').replace('🎟️','').trim();}
+  else{var p=c.parentElement;title=p.textContent.replace(code,'').trim().slice(0,24);}}
+ items[code]=title;
+ var l=document.createElement('label');l.className='pick';
+ var i=document.createElement('input');i.type='checkbox';i.value=code;i.checked=!!picks[code];i.setAttribute('aria-label','想去 '+code);
+ l.appendChild(i);c.parentNode.insertBefore(l,c);l.appendChild(c);
+ i.addEventListener('change',function(){if(i.checked)picks[code]=1;else delete picks[code];update();});
+});
+document.querySelectorAll('input[name=who]').forEach(function(r){
+ if(r.value===who)r.checked=true;
+ r.addEventListener('change',function(){who=r.value;update();});
+});
+function codes(){return Object.keys(picks).sort();}
+function update(){
+ var n=codes().length;
+ document.getElementById('cnt').textContent='已揀 '+n+' 個';
+ document.getElementById('send').disabled=(n===0);
+ save();
+}
+document.getElementById('clear').addEventListener('click',function(){
+ picks={};document.querySelectorAll('.pick input').forEach(function(i){i.checked=false;});update();
+});
+document.getElementById('send').addEventListener('click',function(){
+ var c=codes();var name=who||'（未揀名）';
+ var t='【'+name+'】新加坡聖誕，我想去：\n'+c.map(function(k){return k+' '+items[k];}).join('\n');
+ window.open('https://wa.me/?text='+encodeURIComponent(t),'_blank');
+});
+update();
+})();
+</script>
+
 </body>
 </html>
