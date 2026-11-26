@@ -32,6 +32,9 @@ h2 .big{color:var(--red)}
 .todo{color:var(--warn);font-size:.92rem}
 .src{font-size:.88rem;color:var(--muted)}
 .poster{display:block;width:100%;height:auto;background:#eee}
+.photo{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#ddd}
+.book{background:#ffe9b8;color:#5a3a00;font-weight:600}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .book{background:#5a4210;color:#ffe3a0}}
 .credit{font-size:.78rem;color:var(--muted);padding:4px 16px 0}
 a{color:var(--red)}
 .fixed,.tips,.ask{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
@@ -58,6 +61,7 @@ footer{margin-top:30px;color:var(--muted);font-size:.85rem}
 <a href="#c">C 動物</a>
 <a href="#d">D 打卡位</a>
 <a href="#e">E 輕鬆</a>
+<a href="#book">要訂票</a>
 <a href="#tips">實用貼士</a>
 </nav>
 
@@ -81,7 +85,7 @@ footer{margin-top:30px;color:var(--muted);font-size:.85rem}
 <div class="credit">圖：小紅書 @小熊布丁</div>
 <div class="body">
 <h3><span class="code">A2</span>濱海灣花園：聖誕奇境 Christmas Wonderland</h3>
-<div class="chips"><span class="chip">要買票</span><span class="chip">細路最愛</span><span class="chip">夜晚6:30至11:00</span></div>
+<div class="chips"><span class="chip book">🎟️ 要預早訂</span><span class="chip">要買票</span><span class="chip">細路最愛</span><span class="chip">夜晚6:30至11:00</span></div>
 <p>11月27日至1月3日。有20米高聖誕樹屋、Santa Mission Control 同市集。</p>
 <p class="price">入場約 S$9 至 S$16（約HK$55至95），小童 S$7（約HK$40）。</p>
 <p class="todo">價錢來自第三方網站，按日子同提早購票而異，「待確認」。假日同聖誕前後人多，建議預早上網買票。</p>
@@ -94,7 +98,7 @@ footer{margin-top:30px;color:var(--muted);font-size:.85rem}
 <div class="credit">圖：小紅書 @小熊布丁</div>
 <div class="body">
 <h3><span class="code">A3</span>花穹聖誕火車展 Flower Dome</h3>
-<div class="chips"><span class="chip">室內有冷氣</span><span class="chip">細路啱</span><span class="chip">約1小時</span></div>
+<div class="chips"><span class="chip book">🎟️ 要預早訂</span><span class="chip">室內有冷氣</span><span class="chip">細路啱</span><span class="chip">約1小時</span></div>
 <p>11月20日至1月3日，每日早上9:00至晚上9:00。微縮火車穿梭喺迷你景觀之間。要買 Flower Dome 門票。</p>
 <p class="todo">遊客票價：待確認（官網只列出居民價）。</p>
 <p class="src"><a href="https://www.gardensbythebay.com.sg/en/things-to-do/calendar-of-events/gardens-by-the-bay-christmas-train-show-2026.html">官方網頁（英文）</a></p>
@@ -127,9 +131,9 @@ footer{margin-top:30px;color:var(--muted);font-size:.85rem}
 <h2 id="b"><span class="big">B</span> 樂園同水族館</h2>
 <p class="lead">呢類要成日或半日時間。細路5歲同10歲，要睇身高限制，所以先問家姐想唔想去。</p>
 
-<div class="card"><div class="body">
+<div class="card"><img class="photo" loading="lazy" src="img/uss.jpg" alt="環球影城"><div class="body">
 <h3><span class="code">B1</span>環球影城 Universal Studios Singapore</h3>
-<div class="chips"><span class="chip">玩成日</span><span class="chip">10歲啱</span><span class="chip">5歲有部分設施有身高限制</span></div>
+<div class="chips"><span class="chip book">🎟️ 要預早訂</span><span class="chip">玩成日</span><span class="chip">10歲啱</span><span class="chip">5歲有部分設施有身高限制</span></div>
 <p class="price">一日票：平日 大人 S$83（約HK$500）、小童 S$62（約HK$370）。假日大人 S$86、小童 S$64。</p>
 <p>聖誕期間有糖果主題聖誕樹同 Jingle Jam 表演，12月22至25日晚有煙花（來自第三方報道）。</p>
 <p>身高參考：Transformers、小小兵約 102cm 以上，Revenge of the Mummy 122cm，Battlestar Galactica 125cm。</p>
@@ -139,13 +143,13 @@ footer{margin-top:30px;color:var(--muted);font-size:.85rem}
 
 <div class="card"><div class="body">
 <h3><span class="code">B2</span>新加坡海洋館 Oceanarium</h3>
-<div class="chips"><span class="chip">室內有冷氣</span><span class="chip">5歲同10歲都啱</span><span class="chip">約3至4小時</span></div>
+<div class="chips"><span class="chip book">🎟️ 要預早訂</span><span class="chip">室內有冷氣</span><span class="chip">5歲同10歲都啱</span><span class="chip">約3至4小時</span></div>
 <p class="price">大人由 S$55（約HK$330）起，小童（4至12歲）由 S$43（約HK$260）起。</p>
 <p>聖誕期間有水底聖誕表演、聖誕老人潛水餵魚。12月5、15、16日全日休館（官網通告）。</p>
 <p class="src"><a href="https://www.rwsentosa.com/id-id/play/singapore-oceanarium">官方網站（英文）</a></p>
 </div></div>
 
-<div class="card"><div class="body">
+<div class="card"><img class="photo" loading="lazy" src="img/cablecar.jpg" alt="新加坡纜車"><div class="body">
 <h3><span class="code">B3</span>新加坡纜車 Cable Car</h3>
 <div class="chips"><span class="chip">景色</span><span class="chip">阿媽可以坐低歎景</span></div>
 <p class="price">Sky Pass：大人 S$35（約HK$210），小童 S$25（約HK$150）。</p>
@@ -153,9 +157,9 @@ footer{margin-top:30px;color:var(--muted);font-size:.85rem}
 <p class="src"><a href="https://www.mountfaberleisure.com/attraction/singapore-cable-car/">官方網站（英文）</a></p>
 </div></div>
 
-<div class="card"><div class="body">
+<div class="card"><img class="photo" loading="lazy" src="img/luge.jpg" alt="斜坡滑車"><div class="body">
 <h3><span class="code">B4</span>聖淘沙斜坡滑車 Skyline Luge</h3>
-<div class="chips"><span class="chip">10歲最啱</span><span class="chip">5歲同大人一齊坐</span><span class="chip">每次約15至20分鐘</span></div>
+<div class="chips"><span class="chip book">🎟️ 要預早訂</span><span class="chip">10歲最啱</span><span class="chip">5歲同大人一齊坐</span><span class="chip">每次約15至20分鐘</span></div>
 <p>坐纜椅上山，然後自己揸車沿斜路衝落嚟。細路好鍾意。</p>
 <p><b>年齡同身高（官方）：</b>2至6歲而且身高85至110cm嘅細路，要同大人一齊坐（買「Child Doubling」票）。6歲以上而且高過110cm可以自己坐。110至125cm由家長決定自己坐定同大人一齊坐。5歲細路同大人坐就得，10歲嘅話通常自己可以坐。</p>
 <p class="price">三次車（2次纜椅＋3次滑車）約 S$33（約HK$200）一位。</p>
@@ -166,50 +170,50 @@ footer{margin-top:30px;color:var(--muted);font-size:.85rem}
 <h2 id="c"><span class="big">C</span> 動物</h2>
 <p class="lead">萬態野生動物保育園 Mandai 一帶有幾個，可以揀一至兩個。價錢係遊客價（成人 / 小童），官網「regular days」。</p>
 
-<div class="card"><div class="scroll">
+<div class="card"><img class="photo" loading="lazy" src="img/zoo.jpg" alt="新加坡動物園白老虎"><div class="scroll">
 <table>
 <tr><th>代號</th><th>地方</th><th>大人</th><th>小童</th></tr>
 <tr><td><span class="code">C1</span></td><td>新加坡動物園（日間，8:30至18:00）</td><td>S$49</td><td>S$34</td></tr>
 <tr><td><span class="code">C2</span></td><td>河川生態園 River Wonders（9:00至18:00）</td><td>S$45</td><td>S$33</td></tr>
-<tr><td><span class="code">C3</span></td><td>夜間動物園 Night Safari（18:00至午夜，要揀時段）</td><td>S$58</td><td>S$41</td></tr>
+<tr><td><span class="code">C3</span></td><td>夜間動物園 Night Safari（18:00至午夜，要揀時段）🎟️</td><td>S$58</td><td>S$41</td></tr>
 <tr><td><span class="code">C4</span></td><td>飛禽公園 Bird Paradise</td><td>S$49</td><td>S$34</td></tr>
 </table>
 </div>
 <div class="body">
-<p>組合票：2個景點一日通行證，大人 S$98 / 小童 S$70。6個景點一日通行證，大人 S$128 / 小童 S$100。（小童指3至12歲）</p>
+<img class="photo" loading="lazy" src="img/nightsafari.jpg" alt="夜間動物園" style="border-radius:10px;margin:8px 0"><p>組合票：2個景點一日通行證，大人 S$98 / 小童 S$70。6個景點一日通行證，大人 S$128 / 小童 S$100。（小童指3至12歲）</p>
 <p class="todo">夜間動物園晚上先開，5歲細路可能太夜。想睇動物，日間動物園或河川生態園較易。小童價年齡範圍以官網為準。</p>
 <p class="src"><a href="https://www.mandai.com/en/tickets-and-passes.html">官方購票（英文）</a> · <a href="https://www.mandai.com/en/night-safari.html">夜間動物園（英文）</a></p>
 </div></div>
 
-<h2 id="d"><span class="big">D</span> 阿媽想影相打卡位</h2>
+<h2 id="d"><span class="big">D</span> 影相打卡位</h2>
 <p class="lead">全部都係新加坡標誌性地方，影張相就得，唔使入場。</p>
 
-<div class="card"><div class="body">
+<div class="card"><img class="photo" loading="lazy" src="img/merlion.jpg" alt="魚尾獅"><div class="body">
 <h3><span class="code">D1</span>魚尾獅公園 Merlion Park</h3>
 <div class="chips"><span class="chip free">免費</span><span class="chip">約30至45分鐘</span></div>
 <p>最經典嘅相。背後係金沙酒店，傍晚或夜晚影更靚。可以同 D2 一齊去。</p>
 </div></div>
 
-<div class="card"><div class="body">
+<div class="card"><img class="photo" loading="lazy" src="img/mbs.jpg" alt="金沙酒店"><div class="body">
 <h3><span class="code">D2</span>濱海灣金沙酒店 ＋ 濱海灣花園外圍</h3>
 <div class="chips"><span class="chip free">外圍免費</span><span class="chip">夜景</span></div>
 <p>沿海濱行，可以影到金沙酒店、藝術科學館同蓮花。同 A2 同一區，可以放喺同一晚。</p>
 <p class="todo">觀景台（Skypark）要買票，價錢待確認。</p>
 </div></div>
 
-<div class="card"><div class="body">
+<div class="card"><img class="photo" loading="lazy" src="img/chinatown.jpg" alt="牛車水"><div class="body">
 <h3><span class="code">D3</span>牛車水 Chinatown</h3>
 <div class="chips"><span class="chip free">免費行街</span><span class="chip">買手信</span><span class="chip">食嘢</span></div>
 <p>傳統店舖、寺廟同小販中心，買手信好方便。聖誕期間通常有燈飾，詳情待確認。</p>
 </div></div>
 
-<div class="card"><div class="body">
+<div class="card"><img class="photo" loading="lazy" src="img/clarke.jpg" alt="克拉碼頭"><div class="body">
 <h3><span class="code">D4</span>克拉碼頭 Clarke Quay ／ 駁船碼頭</h3>
 <div class="chips"><span class="chip free">免費</span><span class="chip">夜景</span></div>
 <p>河邊彩色建築同餐廳，夜晚好有氣氛。可以食飯順便行。</p>
 </div></div>
 
-<div class="card"><div class="body">
+<div class="card"><img class="photo" loading="lazy" src="img/haji.jpg" alt="哈芝巷"><div class="body">
 <h3><span class="code">D5</span>哈芝巷 ／ 甘榜格南（蘇丹回教堂一帶）</h3>
 <div class="chips"><span class="chip free">免費</span><span class="chip">壁畫</span></div>
 <p>色彩繽紛嘅壁畫同小店，好多人影相。</p>
@@ -229,6 +233,19 @@ footer{margin-top:30px;color:var(--muted);font-size:.85rem}
 <p><span class="code">E4</span>小販中心食本地小食，例如 Maxwell、Lau Pa Sat、Amoy Street。</p>
 <p class="todo">開放時間同交通時間：待確認。</p>
 </div></div>
+
+<h2 id="book">🎟️ 要預早訂票嘅項目</h2>
+<div class="tips">
+<p><b>建議最少提早幾日上網買：</b></p>
+<p>• <span class="code">A2</span>聖誕奇境：假日同聖誕前後最多人，提早買價錢較平。</p>
+<p>• <span class="code">B1</span>環球影城：上網買通常較平，聖誕期間人多。</p>
+<p>• <span class="code">B4</span>斜坡滑車：官網要預約時段，唔好買轉售票。</p>
+<p>• <span class="code">C3</span>夜間動物園：入場要揀時段。</p>
+<p>• <span class="code">A3</span>花穹火車展：要買 Flower Dome 門票。</p>
+<p>• <span class="code">B2</span>海洋館：12月5、15、16日休館，揀日子前先睇官網。</p>
+<p><b>唔使訂票：</b>A1 烏節路、A4 星耀樟宜聖誕樹、A5 聖淘沙裝飾、D 全部、E 全部。（A1 市集同 A4 Canopy Park 入場費當日俾。）</p>
+<p class="todo">具體開售日同價錢以各官網為準。</p>
+</div>
 
 <h2 id="tips">實用貼士</h2>
 <div class="tips">
@@ -253,6 +270,7 @@ footer{margin-top:30px;color:var(--muted);font-size:.85rem}
 
 <footer>
 <p>資料整理自官方網站同第三方網頁，價錢同時間可能更改，出發前請再確認。標「待確認」嘅項目未核實。海報圖來自小紅書 @小熊布丁，只作家人參考。</p>
+<details><summary>相片來源（Wikimedia Commons）</summary><ul style="font-size:.8rem"><li>mbs：<a href="https://commons.wikimedia.org/wiki/File:Marina_Bay_Sands_(230913).jpg">Marina Bay Sands (230913).jpg</a>（Moheen Reeyad，CC BY-SA 4.0）</li><li>clarke：<a href="https://commons.wikimedia.org/wiki/File:Clarke_Quay_at_night,_Singapore,_20240205_1946_6058.jpg">Clarke Quay at night, Singapore, 20240205 1946 6058.jpg</a>（Jakub Hałun，CC BY 4.0）</li><li>uss：<a href="https://commons.wikimedia.org/wiki/File:Universal_Studios_Singapore_globe_(125026).jpg">Universal Studios Singapore globe (125026).jpg</a>（Moheen Reeyad，CC BY-SA 4.0）</li><li>zoo：<a href="https://commons.wikimedia.org/wiki/File:White_tiger_at_Singapore_Zoo,_20240206_0831_6134.jpg">White tiger at Singapore Zoo, 20240206 0831 6134.jpg</a>（Jakub Hałun，CC BY 4.0）</li><li>nightsafari：<a href="https://commons.wikimedia.org/wiki/File:Singapore_Night_Safari_(7448742056).jpg">Singapore Night Safari (7448742056).jpg</a>（shankar s. from Poona (pune), ，CC BY 2.0）</li><li>cablecar：<a href="https://commons.wikimedia.org/wiki/File:Singapore-Sentosa_Cable_Car_in_2023_01.jpg">Singapore-Sentosa Cable Car in 2023 01.jpg</a>（Renek78，CC0）</li><li>luge：<a href="https://commons.wikimedia.org/wiki/File:Sentosa_Luge,_Sentosa,_Aug_06.JPG">Sentosa Luge, Sentosa, Aug 06.JPG</a>（User:Sengkang，Copyrighted free use）</li><li>maxwell：<a href="https://commons.wikimedia.org/wiki/File:Maxwell_Food_Centre,_2025.jpg">Maxwell Food Centre, 2025.jpg</a>（Actuall7，CC0）</li><li>merlion：<a href="https://commons.wikimedia.org/wiki/File:Merli%C3%B3n,_Marina_Bay,_Singapur,_2023-08-18,_DD_45-47_HDR.jpg">Merlión, Marina Bay, Singapur, 2023-08-18, DD 45-47 HDR.jpg</a>（Diego Delso，CC BY-SA 4.0）</li><li>haji：<a href="https://commons.wikimedia.org/wiki/File:Haji_Lane_Walk.jpg">Haji Lane Walk.jpg</a>（Albert Lin，CC BY-SA 4.0）</li><li>chinatown：<a href="https://commons.wikimedia.org/wiki/File:Singapore_Chinatown_Festive_Street_Lighting_Jan_2020.jpg">Singapore Chinatown Festive Street Lighting Jan 2020.jpg</a>（ScribblingGeek，CC BY-SA 4.0）</li></ul></details>
 </footer>
 </main>
 </body>
